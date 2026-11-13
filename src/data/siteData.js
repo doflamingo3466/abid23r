@@ -1,20 +1,17 @@
 export const modules = [
   {
-    icon: "☀",
     tag: "Tier-1 Storage",
     title: "Utility-Scale Solar Storage",
     code: "BESS-MOD-880",
     text: "Stores extra power from solar farms and sends it back when needed.",
   },
   {
-    icon: "♧",
     tag: "Smart Technology",
     title: "AI-Orchestrated Microgrids",
     code: "VPP-AUTONOMY-V2",
     text: "Uses weather and power data to help manage local energy use.",
   },
   {
-    icon: "◉",
     tag: "Carbon Records",
     title: "Dynamic Carbon Credit Verification",
     code: "REC-LEDGER-VERRA",
@@ -24,7 +21,6 @@ export const modules = [
 
 export const facilities = [
   [
-    "☀",
     "Atacama Solar Basin Alpha",
     "ID: CL-ATAC-01 // Solar Power",
     "628.4 MW",
@@ -32,15 +28,14 @@ export const facilities = [
     "Gold Standard",
   ],
   [
-    "♨",
     "Kattegat Offshore Array 2",
     "ID: DK-KAT-02 // Wind Power",
     "485.8 MW",
-    "1,128,488 MT CO₂e",
+    "1,128,488 MT CO2e",
     "Optimal Flow",
   ],
   [
-    "☼",
+
     "Mojave Clean Energy Reservoir",
     "ID: US-MOJ-09 // Solar Storage",
     "318.8 MW",
@@ -48,11 +43,10 @@ export const facilities = [
     "Gold Standard",
   ],
   [
-    "♧",
     "Bavarian Forest Micro-Cluster",
     "ID: DE-BAY-04 // Hydro Power",
-    "192.5 MW",
-    "446,188 MT CO₂e",
+    "193 MW",
+    "446,188 MT CO2e",
     "Optimal Flow",
   ],
 ];

@@ -1,14 +1,14 @@
 import { useState } from "react";
 
 function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menu, setMenu] = useState(false);
 
   return (
     <>
       <div className="topbar">
-        <span>● STANDARDIZED TEST ENVIRONMENT #08</span>
-        <span>SolarisGrid CleanTech v4.2 Evaluation Suite</span>
-        <span>Allocated Duration: 05:00:00</span>
+        <span>STANDARDIZED TEST ENVIRONMENT</span>
+        <span>SolarisGrid CleanTech Evaluation Suite</span>
+        <span>Allocated Duration: 05 hr</span>
       </div>
 
       <header className="header">
@@ -20,19 +20,16 @@ function Header() {
           </span>
         </a>
 
-        <button
-          className="mobile-toggle"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? "✕" : "☰"}
+        <button className="mobile-toggle" onClick={() => setMenu(!menu)}>
+          {menu ? "✕" : "☰"}
         </button>
 
-        <nav className={menuOpen ? "nav nav-open" : "nav"}>
-          <a href="#overview" onClick={() => setMenuOpen(false)}>Overview</a>
-          <a href="#capabilities" onClick={() => setMenuOpen(false)}>Capabilities</a>
-          <a href="#matrix" onClick={() => setMenuOpen(false)}>Matrix</a>
-          <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
-          <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+        <nav className={menu ? "nav nav-open" : "nav"}>
+          <a href="#overview">Overview</a>
+          <a href="#capabilities">Capabilities</a>
+          <a href="#matrix">Matrix</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </nav>
 
         <div className="header-actions">

@@ -3,7 +3,7 @@ function Hero() {
     <section className="hero section-wrap" id="overview">
       <div className="hero-copy">
         <span className="eyebrow">
-          ⚡ SOLARISGRID CLEANTECH V4.2 // 5-HOUR EXAM
+           SOLARISGRID CLEANTECH
         </span>
 
         <h1>
@@ -17,7 +17,7 @@ function Hero() {
 
         <div className="hero-buttons">
           <a href="#contact" className="primary-btn">
-            ⚡ Connect Clean Grid
+             Connect Clean Grid
           </a>
 
           <a href="#matrix" className="secondary-btn">
@@ -32,12 +32,12 @@ function Hero() {
           </div>
 
           <div className="metric">
-            <strong>4.2MT</strong>
+            <strong>4 MT</strong>
             <span>CO₂ Averted Annually</span>
           </div>
 
           <div className="metric">
-            <strong>99.999%</strong>
+            <strong>99%</strong>
             <span>Fault Immunity Level</span>
           </div>
         </div>
@@ -52,14 +52,14 @@ function Hero() {
 
           <span className="efficiency">
             Grid Efficiency:
-            <b>98.7%</b>
+            <b>98%</b>
           </span>
         </div>
 
         <div className="telemetry-info">
           <div>
             Grid Frequency
-            <b>59.998 Hz (Stable)</b>
+            <b>60 Hz (Stable)</b>
           </div>
 
           <div>
@@ -107,15 +107,14 @@ function Hero() {
         </div>
 
         <div className="battery">
-          <span className="battery-icon">⚡</span>
 
           <div>
             <small>Storage State</small>
-            <b>Lithium-Iron-Phosphate</b>
+            <b>Lithium Iron Phosphate</b>
           </div>
 
           <strong>
-            94.2%
+            94%
             <small>Capacity Ready</small>
           </strong>
         </div>

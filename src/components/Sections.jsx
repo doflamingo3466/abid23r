@@ -3,12 +3,12 @@ import { modules, facilities, cases } from "../data/siteData";
 export function PartnerStrip() {
   return (
     <div className="partners">
-      <span>✣ INTERCONNECTED UTILITY OPERATORS:</span>
-      <b>◉ TESLA ENERGY</b>
-      <b>✥ SIEMENS ENERGY</b>
-      <b>♧ ENPHASE</b>
-      <b>♙ VESTAS</b>
-      <b>▦ ØRSTED</b>
+      <span> INTERCONNECTED UTILITY OPERATORS:</span>
+      <b> TESLA ENERGY</b>
+      <b> SIEMENS ENERGY</b>
+      <b> ENPHASE</b>
+      <b> VESTAS</b>
+      <b> ORSTED</b>
     </div>
   );
 }
@@ -56,7 +56,7 @@ export function Matrix() {
       <div className="section-wrap">
         <span className="section-kicker">CONTINUOUS AUDIT PROTOCOL</span>
 
-        <h2>Regional Energy Output &amp; Carbon Savings</h2>
+        <h2>Regional Energy Output & Carbon Savings</h2>
 
         <p className="section-sub">
           A quick look at power output and estimated carbon savings from
