@@ -41,7 +41,7 @@ export function Modules() {
 
             <div className="module-foot">
               <small>{item.code}</small>
-              <a href="#contact">Deploy Module ↗</a>
+              <a href="#contact">Deploy Module </a>
             </div>
           </article>
         ))}
