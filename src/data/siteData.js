@@ -8,14 +8,14 @@ export const modules = [
   },
   {
     icon: "AI",
-    tag: "Smart Technology",
+    tag: "Adaptive ML",
     title: "AI-Orchestrated Microgrids",
     code: "VPP-AUTONOMY-V2",
     text: "Uses weather and power data to help manage local energy use.",
   },
   {
     icon: "TICK",
-    tag: "Carbon Records",
+    tag: "Immutable Proof",
     title: "Dynamic Carbon Credit Verification",
     code: "REC-LEDGER-VERRA",
     text: "Keeps records of clean energy production and carbon savings.",

@@ -4,7 +4,7 @@ function Footer() {
       <div className="footer-main">
         <div className="footer-brand">
           <div className="brand">
-            <span className="brand-mark">✓</span>
+            <span className="brand-mark">A C</span>
             <b>AegisCore Architecture</b>
           </div>
 

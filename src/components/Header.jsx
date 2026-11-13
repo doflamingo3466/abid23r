@@ -13,7 +13,7 @@ function Header() {
 
       <header className="header">
         <a href="#overview" className="brand">
-          <span className="brand-mark">AC</span>
+          <span className="brand-mark">A C</span>
           <span>
             <b>AegisCore</b>
             <small>Standards Engine</small>
