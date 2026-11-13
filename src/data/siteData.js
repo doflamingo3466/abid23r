@@ -56,7 +56,7 @@ export const facilities = [
 
 export const cases = [
   {
-    label: "Case 01 // Wind Energy",
+    label: "Case 01 // Maritime Infrastructure",
     title: "Nordic Offshore Wind Farm",
     image:
       "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=85",
@@ -68,8 +68,8 @@ export const cases = [
     sideLabel: "Primary Interconnect",
   },
   {
-    label: "Case 02 // Solar Energy",
-    title: "SunBolt Megawatt Microgrid",
+    label: "Case 02 // Desert Grid Sheild",
+    title: "SunBelt Megawatt Microgrid",
     image:
       "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1200&q=85",
     chip: "12ms Response Time",
