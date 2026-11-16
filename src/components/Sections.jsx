@@ -1,3 +1,4 @@
+
 import { modules, facilities, cases } from "../data/siteData";
 
 export function PartnerStrip() {
@@ -29,7 +30,7 @@ export function Modules() {
       </div>
 
       <div className="module-grid">
-        {modules.map((item) => (
+        {[...modules].map((item) => (
           <article className="module-card" key={item.code}>
             <div className="module-top">
               <span className="module-icon">{item.icon}</span>
@@ -41,7 +42,7 @@ export function Modules() {
 
             <div className="module-foot">
               <small>{item.code}</small>
-              <a href="#contact">Deploy Module </a>
+              <a href="#contact">Deploy Module</a>
             </div>
           </article>
         ))}
@@ -75,28 +76,27 @@ export function Matrix() {
             </thead>
 
             <tbody>
-              {facilities.map((facility) => (
+              {[...facilities].map((facility) => (
                 <tr key={facility[1]}>
                   <td>
                     <b className="facility-name">
-                      <span>{facility[0]}</span>
-                      {facility[1]}
+                      {facility[0]}
                     </b>
-                    <small>{facility[2]}</small>
+                    <small>{facility[1]}</small>
                   </td>
 
-                  <td>{facility[3]}</td>
-                  <td className="green">{facility[4]}</td>
+                  <td>{facility[2]}</td>
+                  <td className="green">{facility[3]}</td>
 
                   <td>
                     <span
                       className={
-                        facility[5] === "Gold Standard"
+                        facility[4] === "Gold Standard"
                           ? "status gold"
                           : "status good"
                       }
                     >
-                      {facility[5]}
+                      {facility[4]}
                     </span>
                   </td>
                 </tr>
@@ -122,7 +122,7 @@ export function CaseStudies() {
       </p>
 
       <div className="case-grid">
-        {cases.map((item) => (
+        {[...cases].map((item) => (
           <article className="case-card" key={item.title}>
             <div
               className="case-image"

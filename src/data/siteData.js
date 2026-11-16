@@ -1,12 +1,18 @@
+
+const defaultModule = {
+  tag: "Tier-1 Storage",
+  text: "Stores extra power from solar farms and sends it back when needed.",
+};
+
 export const modules = [
   {
+    ...defaultModule,
     icon: "SUN",
-    tag: "Tier-1 Storage",
     title: "Utility-Scale Solar Storage",
     code: "BESS-MOD-880",
-    text: "Stores extra power from solar farms and sends it back when needed.",
   },
   {
+    ...defaultModule,
     icon: "AI",
     tag: "Adaptive ML",
     title: "AI-Orchestrated Microgrids",
@@ -14,6 +20,7 @@ export const modules = [
     text: "Uses weather and power data to help manage local energy use.",
   },
   {
+    ...defaultModule,
     icon: "TICK",
     tag: "Immutable Proof",
     title: "Dynamic Carbon Credit Verification",
@@ -38,7 +45,6 @@ export const facilities = [
     "Optimal Flow",
   ],
   [
-
     "Mojave Clean Energy Reservoir",
     "ID: US-MOJ-09 // Solar Storage",
     "318.8 MW",
@@ -59,7 +65,7 @@ export const cases = [
     label: "Case 01 // Maritime Infrastructure",
     title: "Nordic Offshore Wind Farm",
     image:
-      "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=85",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEaLdhWC1wWqoufNBnBm1lJyvdoSGqhM7vPMdzymLcmA&s=10",
     chip: "380kV HVAC Link",
     text: "Connects offshore wind turbines to the main grid and helps supply power.",
     metric: "$42.8M Annually",
@@ -68,10 +74,10 @@ export const cases = [
     sideLabel: "Primary Interconnect",
   },
   {
-    label: "Case 02 // Desert Grid Sheild",
+    label: "Case 02 // Desert Grid Shield",
     title: "SunBelt Megawatt Microgrid",
     image:
-      "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1200&q=85",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGe4bBiXxwKe19vghkuBIjNzyaCtScgkUBc8bzPbUTmw&s=10",
     chip: "12ms Response Time",
     text: "A local power system that helps hospitals and factories stay powered.",
     metric: "38% Load Deflection",
