@@ -1,4 +1,3 @@
-
 import { modules, facilities, cases } from "../data/siteData";
 
 export function PartnerStrip() {
@@ -79,9 +78,7 @@ export function Matrix() {
               {[...facilities].map((facility) => (
                 <tr key={facility[1]}>
                   <td>
-                    <b className="facility-name">
-                      {facility[0]}
-                    </b>
+                    <b className="facility-name">{facility[0]}</b>
                     <small>{facility[1]}</small>
                   </td>
 

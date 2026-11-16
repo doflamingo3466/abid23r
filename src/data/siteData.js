@@ -1,4 +1,3 @@
-
 const defaultModule = {
   tag: "Tier-1 Storage",
   text: "Stores extra power from solar farms and sends it back when needed.",
