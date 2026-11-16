@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 function AuditForm() {
@@ -6,8 +5,8 @@ function AuditForm() {
     name: "",
     email: "",
     connection: "",
-    timeline: "1-3 Months",
-    solarCredit: true,
+    timeline: "",
+    solarCredit: false,
     euSupport: false,
     energyRecords: false,
     details: "",
@@ -19,9 +18,7 @@ function AuditForm() {
     setForm({
       ...form,
       [e.target.name]:
-        e.target.type === "checkbox"
-          ? e.target.checked
-          : e.target.value,
+        e.target.type === "checkbox" ? e.target.checked : e.target.value,
     });
   }
 
@@ -30,8 +27,8 @@ function AuditForm() {
       name: "",
       email: "",
       connection: "",
-      timeline: "1-3 Months",
-      solarCredit: true,
+      timeline: "",
+      solarCredit: false,
       euSupport: false,
       energyRecords: false,
       details: "",
@@ -47,30 +44,44 @@ function AuditForm() {
   return (
     <section className="audit-section" id="contact">
       <div className="section-wrap audit-inner">
-        <span className="section-kicker">
-          EVALUATION PORTAL // SECTION 6
-        </span>
+        <span className="section-kicker">EVALUATION PORTAL // SECTION 6</span>
 
         <h2>Request a Grid Check</h2>
         <p>
-          Fill in the form to request a basic check of your site's clean energy setup.
+          Fill in the form to request a basic check of your site's clean energy
+          setup.
         </p>
 
         <form className="audit-form" onSubmit={handleSubmit}>
-
           <label>
             Your Name
-            <input name="name" value={form.name} onChange={handleChange} required />
+            <input
+              name="name"
+              value={form.name}
+              onChange={handleChange}
+              required
+            />
           </label>
 
           <label>
             Email Address
-            <input name="email" type="email" value={form.email} onChange={handleChange} required />
+            <input
+              name="email"
+              type="email"
+              value={form.email}
+              onChange={handleChange}
+              required
+            />
           </label>
 
           <label>
             Grid Connection Type
-            <select name="connection" value={form.connection} onChange={handleChange} required>
+            <select
+              name="connection"
+              value={form.connection}
+              onChange={handleChange}
+              required
+            >
               <option value="">Select connection type</option>
               <option>High-voltage transmission (HV)</option>
               <option>Medium-voltage distribution (MV)</option>
@@ -100,36 +111,52 @@ function AuditForm() {
             <legend>Available Energy Support</legend>
 
             <label>
-              <input type="checkbox" name="solarCredit" checked={form.solarCredit} onChange={handleChange} />
+              <input
+                type="checkbox"
+                name="solarCredit"
+                checked={form.solarCredit}
+                onChange={handleChange}
+              />
               Solar Credits
             </label>
 
             <label>
-              <input type="checkbox" name="euSupport" checked={form.euSupport} onChange={handleChange} />
+              <input
+                type="checkbox"
+                name="euSupport"
+                checked={form.euSupport}
+                onChange={handleChange}
+              />
               EU Support
             </label>
 
             <label>
-              <input type="checkbox" name="energyRecords" checked={form.energyRecords} onChange={handleChange} />
+              <input
+                type="checkbox"
+                name="energyRecords"
+                checked={form.energyRecords}
+                onChange={handleChange}
+              />
               Energy Records
             </label>
           </fieldset>
 
           <label>
             Extra Details
-            <textarea name="details" value={form.details} onChange={handleChange} />
+            <textarea
+              name="details"
+              value={form.details}
+              onChange={handleChange}
+            />
           </label>
 
-          {submitted && <p>✓ Your request has been submitted.</p>}
+          {submitted && <p>Your request has been submitted</p>}
 
-          <button type="button" onClick={resetForm}>
+          <button className="secondary-btn" type="button" onClick={resetForm}>
             Reset Form
           </button>
 
-          <button type="submit">
-            Send Request
-          </button>
-
+          <button className="primary-btn" type="submit">Send Request</button>
         </form>
       </div>
     </section>
